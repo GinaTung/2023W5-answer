@@ -1,4 +1,28 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.nav {
+  /* 用 position: fixed; 可以固定住側欄 */
+  position: fixed;
+  min-width: 200px;
+  min-height: 100vh;
+}
+.img-24{
+  width: 24px;
+  height: 24px;
+}
+.pt-7{
+  padding-top: $spacer*2.5;
+}
+.mr-80{
+  padding-right: $spacer*5;  
+}
+.nav-link{
+  padding: 12px 32px;
+  position: relative;
+}
+.nav-link.active::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 4px;
+  height: 32px;
+  border-left: 4px solid $success;
 }
