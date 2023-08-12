@@ -1,3 +1,4 @@
+import $ from "jquery";
 ClassicEditor
   .create( document.querySelector( '#editor' ) )
   .then( editor => {
@@ -19,5 +20,8 @@ $(function() {
     $(('.admin-btn')).removeClass('d-none');
     $(('.admin-collapse')).hide();
     $(('.chevron')).show();
+  })
+  $('.link-assignment').click(function () {
+    window.location.href="./assignment.html";
   })
 });

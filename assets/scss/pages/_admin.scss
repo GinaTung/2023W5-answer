@@ -4,3 +4,7 @@
   .img-style{
     object-fit: cover
   }
+  .active > .page-link{
+    background: $success;
+    color: $white !important;
+  }

@@ -1,6 +1,6 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import "./helpers/_variables";
-@import "../../node_modules/bootstrap/scss//variables-dark";
+@import "../../node_modules/bootstrap/scss/variables-dark";
 @import "../../node_modules/bootstrap/scss/maps";
 @import "./helpers/_utilities";
 
@@ -8,6 +8,7 @@
 // @import "./utils/_utilities";
 @import "./utils/_mixins";
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
 // icon
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
