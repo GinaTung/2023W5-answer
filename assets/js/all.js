@@ -1,3 +1,5 @@
+import jQuery from 'jquery'
+window.$ = jQuery;
 ClassicEditor
   .create( document.querySelector( '#editor' ) )
   .then( editor => {
