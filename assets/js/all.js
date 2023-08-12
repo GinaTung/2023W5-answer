@@ -1,4 +1,3 @@
-import $ from "jquery";
 ClassicEditor
   .create( document.querySelector( '#editor' ) )
   .then( editor => {
