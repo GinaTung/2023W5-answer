@@ -120,32 +120,40 @@
                         <label class="form-check-label text-dark" for="validationFormCheck1">
                           Lecture
                         </label>
-                        <div class="valid-feedback">Example invalid feedback text</div>
+                        <div class="valid-feedback">Example valid feedback text</div>
+                        <div class="invalid-feedback">Example invalid feedback text</div>
                       </div>
                       <div class="form-check mb-3">
                         <input class="form-check-input border border-2 shadow-none border-black me-2" type="checkbox" value="" id="validationFormCheck2" required>
                         <label class="form-check-label text-dark" for="validationFormCheck2">
                           Coupon
                         </label>
-                        <div class="valid-feedback">Example invalid feedback text</div>
+                        <div class="valid-feedback">Example valid feedback text</div>
+                        <div class="invalid-feedback">Example invalid feedback text</div>
                       </div>
                       <div class="form-check mb-3">
-                        <input class="form-check-input border border-2 shadow-none border-black me-2" type="checkbox" value="" id="flexCheckDefault">
+                        <input class="form-check-input border border-2 shadow-none border-black me-2" type="checkbox" value="" id="flexCheckDefault" required>
                         <label class="form-check-label text-dark" for="flexCheckDefault">
                           Message
                         </label>
+                        <div class="valid-feedback">Example valid feedback text</div>
+                        <div class="invalid-feedback">Example invalid feedback text</div>
                       </div>
                       <div class="form-check mb-3">
-                        <input class="form-check-input border border-2 shadow-none border-black me-2" type="checkbox" value="" id="flexCheckDefault">
+                        <input class="form-check-input border border-2 shadow-none border-black me-2" type="checkbox" value="" id="flexCheckDefault" required>
                         <label class="form-check-label text-dark" for="flexCheckDefault">
                           Setting
                         </label>
+                        <div class="valid-feedback">Example valid feedback text</div>
+                        <div class="invalid-feedback">Example invalid feedback text</div>
                       </div>
                       <div class="form-check mb-4">
-                        <input class="form-check-input border border-2 shadow-none border-black me-2" type="checkbox" value="" id="flexCheckDefault">
+                        <input class="form-check-input border border-2 shadow-none border-black me-2" type="checkbox" value="" id="flexCheckDefault" required>
                         <label class="form-check-label text-dark" for="flexCheckDefault">
                           Task Menu
                         </label>
+                        <div class="valid-feedback">Example valid feedback text</div>
+                        <div class="invalid-feedback">Example invalid feedback text</div>
                       </div>
                     </div>
                     <div class="modal-text mb-4">
@@ -200,32 +208,34 @@
                 aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">
-                    <div class="modal-body d-flex p-4">
-                      <img src="/2023W5-answer/assets/emir-3d7a4b39.jpeg" class="img-style" style="width: 141px; height: 141px;">
+                    <div class="modal-body d-flex p-4 h-100">
+                      <img src="/2023W5-answer/assets/emir-3d7a4b39.jpeg" class="img-style" style="width: 141px;">
                       <div class="card-secation w-75 ps-3">
                         <div class="d-flex justify-content-between">
-                          <span>#1</span>
+                          <span class="mb-2">#1</span>
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-
                         </div>
-                        <p class="mb-2">Admin</p>
-                        <h5>Emir Wicks</h5>
-                        <p class="mb-3">emir.wicks@mail.com</p>
+                        <p>Admin</p>
+                        <h5 class="fs-4 mb-2">Emir Wicks</h5>
+                        <p class="fs-7 text-secondary mb-3">emir.wicks@mail.com</p>
                         <div class="d-flex justify-content-between">
                           <p>Verified</p>
                           <!-- Collapse 範例 -->
-                          <button class="btn link-success" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                            <span class="material-icons expand_less">
-                              expand_less
-                            </span>
-                            <span class="material-icons expand_more">
-                              expand_more
-                            </span>
-                          </button>
-                          <div class="collapse" id="collapseExample">
-                            <button type="button" class="btn btn-outline-danger me-3">deactivate</button>
-                            <button type="button" class="btn btn-success">edit</button>
+                          <div class="d-flex flex-column align-items-end">
+
+                            <button class="btn link-success" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                              <span class="material-icons expand_less">
+                                expand_less
+                              </span>
+                              <span class="material-icons expand_more">
+                                expand_more
+                              </span>
+                            </button>
+                            <div class="collapse" id="collapseExample">
+                              <button type="button" class="btn btn-outline-danger me-3">deactivate</button>
+                              <button type="button" class="btn btn-success">edit</button>
+                            </div>
                           </div>
                         </div>
                       </div>
