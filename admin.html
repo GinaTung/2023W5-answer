@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>about</title>
-  <script type="module" crossorigin src="/2023W5-answer/assets/main-ed7a3983.js"></script>
-  <link rel="stylesheet" href="/2023W5-answer/assets/main-90c5641f.css">
+  <script type="module" crossorigin src="/2023W5-answer/assets/main-cdd13fd4.js"></script>
+  <link rel="stylesheet" href="/2023W5-answer/assets/main-acc5b750.css">
 </head>
 
 <body>
@@ -26,7 +26,7 @@
             </span>
             Question
         </a>
-        <a class="nav-link link-success active d-flex align-items-center" aria-current="page" href="assignment.html">
+        <a class="nav-link link-success link-assignment d-flex align-items-center active" aria-current="page" href="assignment.html">
             <span class="material-icons me-3">
                 assignment
             </span>
@@ -64,10 +64,10 @@
           <div class="d-flex align-items-end">
             <h4 class="fs-4 me-50 fw-bold">Admin</h4>
             <a type="button" class="d-flex" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              <span class="material-icons">
+              <span class="material-icons text-success me-2">
                 add
               </span>
-              <div class="fs-6 fw-bold">Add New Admin</div>
+              <div class="fs-6 fw-bold text-dark">Add New Admin</div>
             </a>
             <!-- Modal Add New Admin -->
             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -92,15 +92,65 @@
                     <div class="modal-text border-top pt-4">
                       <h5 class="modal-title fs-5 mb-3 fw-bold" id="staticBackdropLabel">Verification</h5>
                     </div>
-                    <div class="pb-4">
-                      <span class="material-icons">
-                        check_circle
-                      </span>
-                      <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                      <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="emir.wicks@mail.com">
+                    <div class="pb-4 justify-content-between mb-4 border-bottom">
+                      <div class="d-flex justify-content-between mb-3">
+                        <div class="d-flex align-items-center">
+                          <span class="material-icons">
+                            check_circle
+                          </span>
+                          <label for="exampleFormControlInput1" class="form-label mb-0">Email address</label>
+                        </div>
+                        <p class="fs-7">2020/4/12</p>
+                      </div>
+                      <input type="email" class="form-control text-center border-gray-400 text-gray-400 py-3"
+                        id="exampleFormControlInput1" placeholder="emir.wicks@mail.com">
                     </div>
-                    ...
+                    <div class="modal-text border-bottom pb-4 mb-4">
+                      <h5 class="modal-title fs-5 mb-3 fw-bold" id="staticBackdropLabel">Access Level</h5>
+                      <select class="form-select py-3" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                    <div class="modal-text border-bottom mb-4">
+                      <h5 class="modal-title fs-5 mb-3 fw-bold" id="staticBackdropLabel">Custom Access</h5>
+                      <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Lecture
+                        </label>
+                      </div>
+                      <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Coupon
+                        </label>
+                      </div>
+                      <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Message
+                        </label>
+                      </div>
+                      <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Setting
+                        </label>
+                      </div>
+                      <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Task Menu
+                        </label>
+                      </div>
+                    </div>
+                    <div class="modal-text mb-4">
+                      <h5 class="modal-title fs-5 mb-3 fw-bold" id="staticBackdropLabel">Deactivate Account</h5>
+
+                    </div>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -298,16 +348,20 @@
         <nav aria-label="Page navigation example">
           <ul class="pagination justify-content-end">
             <li class="page-item">
-              <a class="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
+              <a class="page-link pb-0 text-success border-success" href="#" aria-label="Previous">
+                <span class="material-icons">
+                  chevron_left
+                </span>
               </a>
             </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link text-dark border-success" href="#">1</a></li>
+            <li class="page-item active"><a class="page-link border-success" href="#">2</a></li>
+            <li class="page-item"><a class="page-link text-dark border-success" href="#">3</a></li>
             <li class="page-item">
-              <a class="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
+              <a class="page-link pb-0 text-success border-success" href="#" aria-label="Next">
+                <span class="material-icons">
+                  chevron_right
+                </span>
               </a>
             </li>
           </ul>
