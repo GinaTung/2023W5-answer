@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>about</title>
-  <script type="module" crossorigin src="/2023W5-answer/assets/main-79e39087.js"></script>
-  <link rel="stylesheet" href="/2023W5-answer/assets/main-8c096245.css">
+  <script type="module" crossorigin src="/2023W5-answer/assets/main-159e064c.js"></script>
+  <link rel="stylesheet" href="/2023W5-answer/assets/main-90c5641f.css">
 </head>
 
 <body>
@@ -53,7 +53,7 @@
     </div>
     <div class="d-flex align-items-center ps-5">
         <img src="/2023W5-answer/assets/andychen-f14fef59.jpeg" alt="andychen" class="img-24 me-3 rounded-circle">
-        <div class="d-flex flex-column mr-80">
+        <div class="d-flex flex-column pr-80">
             <div class="fs-6 mb-1">Andy Chen</div>
             <div class="fs-7">andy0401@mail.com</div>
         </div>
@@ -62,11 +62,53 @@
       <div class="container py-5">
         <div class="d-flex align-items-end justify-content-between mb-5">
           <div class="d-flex align-items-end">
-            <h4 class="fs-4 me-50 fw-bold">Assignment</h4>
-            <div class="fs-6 fw-bold">All Courses</div>
-            <span class="material-icons text-success">
-              expand_more
-            </span>
+            <h4 class="fs-4 me-50 fw-bold">Admin</h4>
+            <a type="button" class="d-flex" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              <span class="material-icons">
+                add
+              </span>
+              <div class="fs-6 fw-bold">Add New Admin</div>
+            </a>
+            <!-- Modal Add New Admin -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title fs-4" id="staticBackdropLabel">Edit Admin</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h5 class="modal-title fs-5 mb-3 fw-bold" id="staticBackdropLabel">Account</h5>
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">Name</label>
+                      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Emir Wicks">
+                    </div>
+                    <div class="pb-4">
+                      <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="emir.wicks@mail.com">
+                    </div>
+                    <div class="modal-text border-top pt-4">
+                      <h5 class="modal-title fs-5 mb-3 fw-bold" id="staticBackdropLabel">Verification</h5>
+                    </div>
+                    <div class="pb-4">
+                      <span class="material-icons">
+                        check_circle
+                      </span>
+                      <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="emir.wicks@mail.com">
+                    </div>
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="d-flex">
             <span class="material-icons me-5">
@@ -77,7 +119,7 @@
             </span>
           </div>
         </div>
-        <table class="table table-hover">
+        <table class="table table-hover mb-80">
           <thead>
             <tr>
               <th scope="col">ID</th>
@@ -89,7 +131,50 @@
           </thead>
           <tbody>
             <tr>
-              <th scope="row">#1</th>
+              <th scope="row">
+                <a type="button" class="text-dark" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                  #1
+                </a>
+              </th>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-body d-flex p-4">
+                      <img src="/2023W5-answer/assets/emir-3d7a4b39.jpeg" class="img-style" style="width: 141px; height: 141px;">
+                      <div class="card-secation w-75 ps-3">
+                        <div class="d-flex justify-content-between">
+                          <span>#1</span>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                        </div>
+                        <p class="mb-2">Admin</p>
+                        <h5>Emir Wicks</h5>
+                        <p class="mb-3">emir.wicks@mail.com</p>
+                        <div class="d-flex justify-content-between">
+                          <p>Verified</p>
+                          <!-- Collapse 範例 -->
+                          <button class="btn link-success" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            <span class="material-icons expand_less">
+                              expand_less
+                            </span>
+                            <span class="material-icons expand_more">
+                              expand_more
+                            </span>
+                          </button>
+                          <div class="collapse" id="collapseExample">
+                            <button type="button" class="btn btn-outline-danger me-3">deactivate</button>
+                            <button type="button" class="btn btn-success">edit</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
               <td>Emir Wicks</td>
               <td>emir.wicks@mail.com</td>
               <td>Yes</td>
@@ -101,10 +186,10 @@
               </td>
             </tr>
             <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
+              <th scope="row">#2</th>
+              <td>Zaina Goldsmith</td>
+              <td>zaina.goldsmith@mail.com</td>
+              <td>Yes</td>
               <td class="text-end">
                 <span class="material-icons px-2" scope="row" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                   visibility</span>
@@ -113,9 +198,10 @@
               </td>
             </tr>
             <tr>
-              <th scope="row">3</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
+              <th scope="row">#3</th>
+              <td>Mahima Lopez</td>
+              <td>mahima.lopez@mail.com</td>
+              <td>Yes</td>
               <td class="text-end">
                 <span class="material-icons px-2" scope="row" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                   visibility</span>
@@ -124,9 +210,10 @@
               </td>
             </tr>
             <tr>
-              <th scope="row">3</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
+              <th scope="row">#4</th>
+              <td>Pharrell Murray</td>
+              <td>pharrell.murray@mail.com</td>
+              <td>Yes</td>
               <td class="text-end">
                 <span class="material-icons px-2" scope="row" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                   visibility</span>
@@ -135,9 +222,10 @@
               </td>
             </tr>
             <tr>
-              <th scope="row">3</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
+              <th scope="row">#5</th>
+              <td>Annika Mcbride</td>
+              <td>annika.mcbride@mail.com</td>
+              <td>Yes</td>
               <td class="text-end">
                 <span class="material-icons px-2" scope="row" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                   visibility</span>
@@ -146,9 +234,10 @@
               </td>
             </tr>
             <tr>
-              <th scope="row">3</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
+              <th scope="row">#6</th>
+              <td>Fatimah Clark</td>
+              <td>Fatimah Clark@mail.com</td>
+              <td>Yes</td>
               <td class="text-end">
                 <span class="material-icons px-2" scope="row" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                   visibility</span>
@@ -157,9 +246,10 @@
               </td>
             </tr>
             <tr>
-              <th scope="row">3</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
+              <th scope="row">#7</th>
+              <td>Klaudia Rhodes</td>
+              <td>Klaudia Rhodes@mail.com</td>
+              <td>Yes</td>
               <td class="text-end">
                 <span class="material-icons px-2" scope="row" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                   visibility</span>
@@ -168,9 +258,10 @@
               </td>
             </tr>
             <tr>
-              <th scope="row">3</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
+              <th scope="row">#8</th>
+              <td>Tillie Lucero</td>
+              <td>Tillie Lucero@mail.com</td>
+              <td>Yes</td>
               <td class="text-end">
                 <span class="material-icons px-2" scope="row" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                   visibility</span>
@@ -179,9 +270,10 @@
               </td>
             </tr>
             <tr>
-              <th scope="row">3</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
+              <th scope="row">#9</th>
+              <td>Sabrina Stephenson</td>
+              <td>Sabrina Stephenson@mail.com</td>
+              <td>Yes</td>
               <td class="text-end">
                 <span class="material-icons px-2" scope="row" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                   visibility</span>
@@ -191,8 +283,9 @@
             </tr>
             <tr>
               <th scope="row">#10</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
+              <td>Annie Smith</td>
+              <td>annie.smith@mail.com</td>
+              <td>Yes</td>
               <td class="text-end">
                 <span class="material-icons px-2" scope="row" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                   visibility</span>
@@ -202,9 +295,28 @@
             </tr>
           </tbody>
         </table>
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-end">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"></script>
     
 </body>
 
