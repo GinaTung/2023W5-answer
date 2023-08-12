@@ -5,7 +5,7 @@
 @import "./helpers/_utilities";
 
 // // 建立BS5-新增寬及高比例
-@import "./utils/_utilities";
+// @import "./utils/_utilities";
 @import "./utils/_mixins";
 @import "../../node_modules/bootstrap/scss/bootstrap";
 // icon
@@ -20,3 +20,4 @@
 
 
 @import './pages/index';
+@import './pages/assignment';

@@ -1,6 +1,7 @@
 .nav {
   /* 用 position: fixed; 可以固定住側欄 */
   position: fixed;
+  width: 296px;
   min-width: 200px;
   min-height: 100vh;
 }
@@ -9,7 +10,7 @@
   height: 24px;
 }
 .pt-7{
-  padding-top: $spacer*2.5;
+  padding-top: $spacer*2.5;//40
 }
 .mr-80{
   padding-right: $spacer*5;  

@@ -1,0 +1,31 @@
+.me-50{
+    margin-right: 50px;
+}
+.mt-12{
+    margin-top: $spacer*0.75;
+}
+.list-group-item{
+    padding: 12px;
+}
+.list-group-item.active{
+    color: $dark;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+  }
+  .expand_more {
+    display: none;
+  }
+  .expand_less {
+    display: inline-block;
+  }
+  .collapsed .expand_more {
+    display: inline-block;
+  }
+  
+  .collapsed .expand_less {
+    display: none;
+  }
+.img-40{
+    width: 40px;
+    height: 40px; 
+}
